@@ -1,0 +1,87 @@
+🚢 Titanic Dataset Preprocessing
+📌 Project Overview
+This project demonstrates data preprocessing on the Titanic Dataset using Python. 
+The objective is to clean and transform the dataset into a machine learning-ready format by handling missing values, encoding categorical features, removing unnecessary attributes, checking duplicates, splitting the data into training and testing sets, and scaling numerical features.
+📂 Dataset Information
+Dataset Name: Titanic Dataset
+Total Records: 891
+Total Features: 12
+Target Variable: Survived
+Libraries Used:
+Pandas
+NumPy
+Scikit-learn
+🔍 Tasks Performed
+1. Data Loading
+Imported the Titanic dataset using Pandas.
+Displayed the complete dataset.
+2. Dataset Exploration
+Displayed dataset shape.
+Displayed the first five rows.
+Displayed the last five rows.
+Displayed dataset information using info().
+Generated summary statistics using describe().
+Displayed column names.
+Identified data types of all features.
+3. Missing Value Analysis
+Checked missing values using isnull().sum().
+Filled missing values in the Age column using the mean.
+Filled missing values in the Embarked column using the mode.
+Removed the Cabin column because it contained a large number of missing values.
+4. Data Transformation
+Converted categorical variables into numerical values.
+Encoded:
+Sex
+Embarked
+5. Data Cleaning
+Verified that all missing values were handled.
+Checked for duplicate records using duplicated().sum().
+6. Feature Engineering
+Separated the dataset into:
+Features (X)
+Target Variable (y)
+7. Train-Test Split
+Split the dataset into training and testing sets using train_test_split().
+Used:
+Test Size = 20%
+Random State = 42
+8. Feature Scaling
+Standardized numerical features using StandardScaler.
+🛠 Preprocessing Techniques Used
+Missing Value Handling
+Data Cleaning
+Label Encoding
+Removing Unnecessary Columns
+Duplicate Detection
+Feature Selection
+Train-Test Split
+Feature Scaling (Standardization)
+📊 Key Observations
+The dataset contains 891 passenger records and 12 attributes.
+Missing values were present in Age, Cabin, and Embarked.
+The Cabin column was removed due to excessive missing values.
+Missing values in Age and Embarked were successfully handled.
+Categorical variables were converted into numerical values for machine learning.
+No duplicate records were found in the dataset.
+The dataset was successfully divided into training and testing datasets.
+Numerical features were standardized using StandardScaler.
+🛠 Technologies Used
+Python
+Pandas
+NumPy
+Scikit-learn
+Jupyter Notebook / Google Colab
+🎯 Learning Outcomes
+Loaded and explored the Titanic dataset.
+Understood dataset structure and feature types.
+Handled missing values using statistical techniques.
+Converted categorical variables into numerical format.
+Removed unnecessary attributes.
+Checked and validated duplicate records.
+Split the dataset into training and testing sets.
+Applied feature scaling for machine learning.
+Prepared the dataset for predictive modeling.
+📌 Conclusion
+This project demonstrates a complete preprocessing pipeline for the Titanic dataset.
+It covers data exploration, missing value treatment, categorical data encoding, duplicate checking, feature selection, train-test splitting, and feature scaling.
+These preprocessing steps are essential for improving data quality and preparing the dataset for machine learning algorithms.
