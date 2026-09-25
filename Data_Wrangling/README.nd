@@ -1,0 +1,153 @@
+# Data Frames and Data Wrangling using Pandas
+
+## 📌 Project Overview
+
+This project demonstrates how to create and manipulate **DataFrames using Python Pandas**. It focuses on common **data wrangling techniques** used to combine and organize data from multiple DataFrames.
+
+The project covers **Merge, Join, and Concatenation** operations with practical examples.
+
+## 🛠️ Technologies Used
+
+* Python
+* Pandas
+* Jupyter Notebook / Google Colab
+
+## 📚 Topics Covered
+
+### 1. Creating DataFrames
+
+* Creating DataFrames using Python dictionaries
+* Displaying DataFrames
+
+### 2. Merge Operations
+
+Pandas `merge()` is used to combine DataFrames using a common column or key.
+
+The following merge operations are demonstrated:
+
+* **Inner Merge** – Returns only matching records from both DataFrames.
+* **Left Merge** – Returns all records from the left DataFrame.
+* **Right Merge** – Returns all records from the right DataFrame.
+* **Outer Merge** – Returns all records from both DataFrames.
+
+### 3. Concatenation
+
+Pandas `concat()` is used to combine multiple DataFrames.
+
+* **Row-wise Concatenation (`axis=0`)**
+* **Column-wise Concatenation (`axis=1`)**
+* Using `ignore_index=True` to reset the index
+
+### 4. Join Operations
+
+Pandas `join()` is used to combine DataFrames, mainly based on their indexes.
+
+The following join operations are demonstrated:
+
+* Inner Join
+* Left Join
+* Outer Join
+
+## 📂 Project Structure
+
+```text
+Data-Frames-and-Data-Wrangling/
+│
+├── Data_Wrangling.ipynb
+├── README.md
+└── requirements.txt
+```
+
+## 💻 Installation
+
+Install Pandas using pip:
+
+```bash
+pip install pandas
+```
+
+Or install the required packages from `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+## 🚀 How to Run
+
+1. Clone the repository:
+
+```bash
+git clone <your-repository-url>
+```
+
+2. Open the notebook:
+
+```text
+Data_Wrangling.ipynb
+```
+
+3. Run the cells sequentially in **Jupyter Notebook** or **Google Colab**.
+
+## 🔍 Example Operations
+
+### Merge
+
+```python
+pd.merge(df1, df2, on='ID', how='inner')
+```
+
+### Row-wise Concatenation
+
+```python
+pd.concat([df1, df2], axis=0, ignore_index=True)
+```
+
+### Column-wise Concatenation
+
+```python
+pd.concat([df1, df2], axis=1)
+```
+
+### Join
+
+```python
+df1.join(df2, how='left')
+```
+
+## 📊 Key Concepts
+
+| Operation           | Purpose                                   |
+| ------------------- | ----------------------------------------- |
+| `merge()`           | Combines DataFrames using a common key    |
+| `concat()`          | Combines DataFrames along rows or columns |
+| `join()`            | Combines DataFrames mainly using indexes  |
+| `axis=0`            | Row-wise operation                        |
+| `axis=1`            | Column-wise operation                     |
+| `ignore_index=True` | Resets the resulting index                |
+
+## 🎯 Learning Outcomes
+
+After completing this project, you will understand:
+
+* How to create Pandas DataFrames
+* How to combine multiple DataFrames
+* Difference between Merge, Join, and Concat
+* Different types of merge operations
+* Row-wise and column-wise concatenation
+* How indexes are used in join operations
+* Basic data wrangling techniques using Pandas
+
+## 📖 Reference
+
+* Kaggle: Merge, Join and Concat with Pandas
+* Pandas Documentation
+
+## 👩‍💻 Author
+
+**Manaswi Bolla**
+
+B.Tech – Computer Science & Engineering (Data Science)
+
+---
+
+⭐ If you find this project useful, consider giving the repository a star!
